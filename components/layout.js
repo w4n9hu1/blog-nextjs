@@ -2,6 +2,7 @@ import styles from './layout.module.css'
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import utilStyles from '../styles/utils.module.css';
 
 export default function Layout({ children, homepage }) {
     return (
@@ -13,9 +14,9 @@ export default function Layout({ children, homepage }) {
                 <Image src="/images/profile.jpg"
                     height={homepage ? 144 : 108}
                     width={homepage ? 144 : 108}
-                    className={styles.borderCircle}
+                    className={utilStyles.borderCircle}
                     alt=" " />
-                <Link href="/" className={styles.heading2Xl}>W4n9hu1's Blog</Link>
+                <Link href="/" className={utilStyles.heading2Xl}>W4n9hu1's Blog</Link>
             </header>
             <main>{children}</main>
             <footer className={styles.footer}>2019-2023 © w4n9hu1</footer>
