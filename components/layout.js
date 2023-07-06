@@ -17,9 +17,13 @@ export default function Layout({ children, homepage }) {
                     className={utilStyles.borderCircle}
                     alt=" " />
                 <Link href="/" className={utilStyles.heading2Xl}>W4n9hu1's Blog</Link>
+                <ul className={styles.navbar}>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/about">About</Link></li>
+                </ul>
             </header>
             <main>{children}</main>
-            <footer className={styles.footer}>2019-2023 © w4n9hu1</footer>
+            <footer className={styles.footer}>2019-{new Date().getFullYear()} © w4n9hu1</footer>
         </div>
     )
 }
