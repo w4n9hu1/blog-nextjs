@@ -11,6 +11,7 @@ export default function HomePage({ allPostsData }) {
             <Head>
                 <title>W4n9hu1's Blog</title>
             </Head>
+            <h2>hello dev</h2>
             <ul className={utilStyles.list}>
                 {allPostsData.map(({ id, date, title }) => (
                     <li className={utilStyles.listItem} key={id}>
